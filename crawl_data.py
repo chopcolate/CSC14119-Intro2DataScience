@@ -59,8 +59,8 @@ def get_table_data(url, file_name):
 
 		print(f"Table data has been written to '{file_name}.csv'.")
 
-	finally:
-		driver.quit()
+	except Exception as e:
+		print(e)
 
 
 if __name__ == "__main__":
